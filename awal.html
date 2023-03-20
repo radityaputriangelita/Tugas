@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .pembungkus {
+            display: grid;
+            grid-template-areas: 
+            "hd hd"
+            "nv nv"
+            "sd cnt"
+            "ft ft";
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 1.5fr 0.5fr 3fr 2fr;
+            gap: 15px;
+        }
+        
+        .header,.nav,.side,.content,.foot {
+            background-color: lightskyblue;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .header {
+            grid-area: hd;
+        }
+        .nav {
+            grid-area: nv;
+        }
+        .side {
+            grid-area: sd;
+        }
+        .content {
+            grid-area: cnt;
+        }
+        .foot {
+            grid-area: ft;
+        }
+    </style>
+</head>
+<body>
+    <div class="pembungkus">
+        <div class="header">Header</div>
+        <div class="nav">Navigation</div>
+        <div class="side">Side Bar</div>
+        <div class="content">Content</div>
+        <div class="foot">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+    <style type="text/CSS">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #40595C;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #183425;
+        }
+        .navbar a {
+            float: left;
+            font-weight: bold;
+            font-size: 16 px;
+            color: white;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+        }
+        .navbar img {
+            float: left;
+            font-weight: bold;
+            font-size: 16 px;
+            color: white;
+            text-align: center;
+            padding: 0px 14px;
+            text-decoration: none;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            text-decoration:underline;
+        }
+        .navbar input[type=text] {
+            float: right;
+            padding: 6px;
+            margin-top: 10px;
+            margin-right: 16px;
+            border: none;
+            font-size: 16px;
+            }
+        .button {
+            background-color: #B88614;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 8px 6px;
+            cursor: pointer;
+            border-radius: 8px;
+            }
+        .button:hover {
+            background-color: #183425;
+        }
+        .dropdown {
+            float: left;
+            overflow:hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 16px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display:none;
+            position: absolute;
+            background-color: #183425;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index : 1;
+        }
+        .dropdown-content a {
+            float :none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #B88614;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            float: left;
+            width: 75%;
+            height: 400px;
+            margin-top: 10px;
+            background-color:#183425;
+            border-radius:4px;
+            padding: 20px;
+            left: auto;
+            top: auto;
+        }
+        .sidebar{
+            float: right;
+            color :white;
+            font-size: 14px;
+            width: 18%;
+            height: 420px;
+            margin-top: 10px;
+            background-color: #183425;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .footer {
+            width: 100%;
+            height: 30px;
+            color: white;
+            background-color: #B78514;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            left: auto;
+            float: left;
+            margin-top: 10px;
+        }
+        .gambarkanan {
+            float: right;
+            margin-right: 30px;
+        }
+        .gambarkiri{
+            float: left;
+            margin-left: 30px;
+        }
+        a{
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="jangkaNews.jpg" width="50" height="50">
+        <a href="#home">Home</a>        
+        <div class="dropdown">
+            <button class="dropbtn">Account</button>
+            <div  class="dropdown-content">
+                <a href="#">Log In</a>
+                <a href="#">Sign Up</a>
+                <a href="#">Setting</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <a href="#news">News</a>        
+        <a href="#business">Business</a>      
+        <a href="#lifestyle">Lifestyle</a>
+        <a href="#womeninbusiness">Women In Business</a>          
+        <button class="button"> Subscribe Magazine</button>
+        <input type="text" placeholder="Search..">        
+    </div>
+    <div class="content">
+        <img class="gambarkiri"src="berita1.png" width="400" height="200"> <img class="gambarkanan"src="berita2.png" width="400" height="200">
+        <img class="gambarkiri" src="berita3.png" width="400" height="200"> <img class="gambarkanan"src="berita4.png" width="400" height="200">
+    </div>
+    <div class="sidebar">
+        <h2 align="center">LATEST NEWS</h2>
+        <ul>
+            <li><a href="#">NCT Mark Lee joining korean forbes 30 under 30</a></li>
+            <br>
+            <li><a href="https://twitter.com/nctsmtown/status/1636666250393964544?s=46&t=57buFJMqbl4cJoK-SBW-LA">NCT HAECHAN for ARENA HOMME+ Korea x LOUIS VUITTON April Issue 2023</a></li>
+            <br>
+            <li><a href="#">Y!KES, Usaha Food and Beverage Pertama Hartono Corporation</a></li>
+            <br>
+            <li><a href="https://www.youtube.com/watch?v=zlTIextYnyQ">EXO KAI comeback with 'Rover'</a></li>
+            <br>
+            <li><a href="https://jangkanewsbersamaparapuan.carrd.co/">Siang Malam, Restoran yang Dirintiis Karena Perceraian</a></li>
+            <br>
+            <li><a href="https://twitter.com/wayv_official/status/1626794058550226944?s=46&t=Jh9XF1pWQc7C1AGobriqDw">2023 WayV Fanmeeting Tour [Phantom] in JAKARTA</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="footer">
+        <img src="jangkaNews.jpg" width="50" height="50" align="left"> 
+        <ul>
+            <a href="#">Contact</a>
+            <a href="#">More Information </a>
+            <a href="#">Cookies </a>
+        </ul>
+    </div>
+</body>
+</html>
